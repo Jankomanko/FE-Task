@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CardList from './CardList';
 import data from '/data.json';
-import "./Main.css";
-
+import "./Main.scss";
 
 const MainSec = () => {
   const [destinations, setDestinations] = useState([]);
@@ -85,3 +84,4 @@ const MainSec = () => {
 )};
 
 export default MainSec;
+

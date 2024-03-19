@@ -1,0 +1,143 @@
+.cards {
+  padding: 2rem 4rem;
+  background: #ffffff;
+}
+.cards h1 {
+  text-align: center;
+}
+.cards .top-destination {
+  color: #F85E9F;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.cards .main_categories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.cards .main_categories h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #191825;
+}
+.cards .main_categories .category {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 40rem;
+  justify-content: space-evenly;
+  padding-bottom: 3rem;
+}
+.cards .main_categories .category .nav-item-city:hover,
+.cards .main_categories .category .nav-item-city:active,
+.cards .main_categories .category .nav-item-city.selected {
+  transform: scale(1.2);
+  font-weight: 600;
+  color: #F85E9F;
+  border-bottom: 1px solid #F85E9F;
+}
+.cards .card-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  gap: 3rem;
+}
+
+/*.card-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  gap: 3rem;
+}*/
+/*.cards__container {
+  display: flex;
+  flex-flow: column;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.category{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 40rem;
+  justify-content: space-evenly;
+  padding-bottom: 3rem;
+}*/
+/*.top-destination {
+  color: $pink-text;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-item-city:hover,
+.nav-item-city:active,
+.nav-item-city.selected{
+    transform: scale(1.2);
+    font-weight: 600;
+    color: $pink-text;
+    border-bottom: 1px solid $pink-text;
+}*/
+/*.main_categories{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_categories h2{
+  font-weight: 600;
+  font-size: 3rem;
+  color: #191825;
+}
+*/
+@media all and (max-width: 1080px) {
+  .main_categories h2 {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 899px) {
+  .category p {
+    font-size: 0.8rem;
+  }
+}
+@media all and (max-width: 750px) {
+  .category {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav-item-city {
+    display: flex;
+    margin: 0.5rem 1rem;
+  }
+}
+@media all and (max-width: 610px) {
+  .cards {
+    padding: 0.5rem 2rem;
+  }
+  .main_categories {
+    flex-wrap: wrap;
+    height: 17rem;
+  }
+  .category {
+    padding: 0.5rem 0;
+    width: 60%;
+    justify-content: space-between;
+  }
+  .category li {
+    width: 6rem;
+  }
+  .category p {
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 390px) {
+  .main_categories {
+    height: 23rem;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./Header.css";
+import "./Header.scss";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -22,8 +22,7 @@ const Header = () => {
       setButton(true);
     }
   };
-
-  window.addEventListener("resize", showButton);
+  
 
   return (
     <header className="navbar">

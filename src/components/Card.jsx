@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Card.css';
+import './Card.scss';
 
 const Card = ({ city, country, shortDescription, rating, price, imageUrl, category }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -13,7 +13,7 @@ const Card = ({ city, country, shortDescription, rating, price, imageUrl, catego
       <article className="card">
         <div className="card-image-container">
           <img src={imageUrl} alt={city} />
-          <div className="rating"> <i className="fa-solid fa-star"></i> {rating}</div>
+          <div className="card-rating"> <i className="fa-solid fa-star"></i> {rating}</div>
         </div>
           <h2>{city}</h2>
           <p className='card-description'>
