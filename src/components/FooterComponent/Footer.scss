@@ -1,5 +1,5 @@
 @use "../src/util/breakpoints" as u;
-@import "Colors";
+@import "../src/util/Colors.scss";
 
 .footer-container {
     background-color: #ffffff;

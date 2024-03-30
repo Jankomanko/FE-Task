@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CardList from './CardList';
+import CardList from '../CardComponent/CardList';
 import data from '/data.json';
 import "./Main.scss";
 

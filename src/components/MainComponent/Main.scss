@@ -1,5 +1,5 @@
 @use "../src/util/breakpoints" as u;
-@import "Colors";
+@import "../src/util/Colors.scss";
 
 
 .cards {
@@ -85,9 +85,9 @@
         .nav-item-city:active,
         .nav-item-city.selected{
          transform: scale(1.2);
-         font-weight: 600;
          color: $pink-text;
          border-bottom: 1px solid $pink-text;
+         cursor: pointer;
         }
 
         .nav-item-city{
@@ -100,10 +100,36 @@
     }
     .card-list {
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+      justify-content: space-between;
       padding-top: 2rem;
       gap: 3rem;
+
+      @include u.breakpoint(xxlarge){
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+      }
+
+      @include u.breakpoint(xlarge){
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+      }
+
+      @include u.breakpoint(large){
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        gap: 1.2rem;
+      }
+
+      @include u.breakpoint(small){
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+
+      .card{
+        margin: 0.6rem 0rem;
+      }
     }
   }
   

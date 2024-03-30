@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import "./Home.scss";
-import MainSec from "../components/Main";
+import MainSec from "../components/MainComponent/Main";
 
 const Home = () => {
   return (

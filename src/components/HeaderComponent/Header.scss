@@ -1,5 +1,5 @@
 @use "../src/util/breakpoints" as u;
-@import "Colors";
+@import "../src/util/Colors.scss";
 
 
 .navbar {
@@ -101,7 +101,7 @@
         
          .nav-links:hover {
           transform: scale(1.2);
-          font-weight: 600;
+          font-weight: 500;
 
           @include u.breakpoint(large){
             background-color: #ffffff;

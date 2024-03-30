@@ -1,5 +1,5 @@
 @use "../src/util/breakpoints" as u;
-@import "Colors";
+@import "../src/util/Colors.scss";
 
 
 
@@ -9,17 +9,37 @@
     width: 25rem;
     height: 40rem;  
 
+    @include u.breakpoint(xxlarge){
+      width: 25rem;
+    }
+    
     @include u.breakpoint(xlarge){
-      width: 30%;
+      width: 30rem;
     }
 
     @include u.breakpoint(large){
-      width: 45%;
+      width: 22rem;
+      height: 37rem;
+    }
+
+    @include u.breakpoint(medium){
+      width: 20rem;
+      height: 35rem;
+    }
+
+    @include u.breakpoint(xmedium){
+      width: 16rem;
+      height: 36rem;
     }
 
     @include u.breakpoint(small){
-      width: 100%;
-      height: auto;
+      width: 25rem;
+      height: 36rem;
+    }
+
+    @include u.breakpoint(xsmall){
+      width: 20rem;
+      height: 35rem;
     }
 
   h2 {
