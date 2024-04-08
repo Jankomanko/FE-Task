@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import CardList from '../CardComponent/CardList';
+import CardList from '../CardGrid/CardList.jsx';
 import data from '/data.json';
-import "./Main.scss";
+import {StyledMain} from "./StyledMain.js";
+
 
 const MainSec = () => {
   const [destinations, setDestinations] = useState([]);
@@ -33,7 +34,7 @@ const MainSec = () => {
     : destinations;
 
   return (
-    <main className="main-sec">
+    <StyledMain className="main-sec">
       <section className="cards">
         <p className="top-destination">TOP DESTINATION</p>
         <section className="main_categories">
@@ -80,7 +81,7 @@ const MainSec = () => {
           </>
         )}
       </section>
-    </main>
+    </StyledMain>
 )};
 
 export default MainSec;

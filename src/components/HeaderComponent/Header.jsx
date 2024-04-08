@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./Header.scss";
+import styled from "styled-components";
+import {StyledHeader} from "./StyledHeader.js";
+
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -25,7 +27,7 @@ const Header = () => {
   
 
   return (
-    <header className="navbar">
+    <StyledHeader className="navbar">
       <nav className="navbar-container">
         <Link to="/" className="navbar-logo">
           Travlog 
@@ -69,7 +71,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </StyledHeader>
   );
 };
 

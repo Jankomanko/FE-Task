@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
-import "./Home.scss";
 import MainSec from "../components/MainComponent/Main";
+import {StyledHome} from "./StyledHome.js";
 
 const Home = () => {
   return (
     <>
-      <section className="hero-container">
+      <StyledHome className="hero-container">
         <div className="hero_text"> 
           <p className="serve">WHAT WE SERVE</p>
           <p className="value">Top Values <br /> For You</p>
@@ -36,7 +36,7 @@ const Home = () => {
               </div>
           </ul>
         </div>         
-      </section>
+      </StyledHome>
       <MainSec/>
     </>
   );

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import './Card.scss';
+import styled from "styled-components";
+import {StyledCard} from "./StyledCard.js";
+import {Button} from "./Button.js"
 
 const Card = ({ city, country, shortDescription, rating, price, imageUrl, category }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -10,7 +12,7 @@ const Card = ({ city, country, shortDescription, rating, price, imageUrl, catego
   };  
   
   return (
-      <article className="card">
+      <StyledCard>
         <div className="card-image-container">
           <img src={imageUrl} alt={city} />
           <div className="card-rating"> <i className="fa-solid fa-star"></i> {rating}</div>
@@ -18,9 +20,9 @@ const Card = ({ city, country, shortDescription, rating, price, imageUrl, catego
           <h2>{city}</h2>
           <p className='card-description'>
            {showFullDescription ? shortDescription : `${shortDescription.slice(0, 150)}...`}
-           <button className="btn-see-more" onClick={handleSeeMore}>
+           <Button secondary="true" className="btn-see-more" onClick={handleSeeMore}>
             {showFullDescription ? 'See Less' : 'See More'}
-           </button>
+           </Button>
           </p>
         <br />
         <div className="card-details">
@@ -29,10 +31,10 @@ const Card = ({ city, country, shortDescription, rating, price, imageUrl, catego
             <p className="price">{price.currency}{price.amount}</p>
           </div>
           <div className="price-details">
-            <button className="btn-card">See More</button>
+            <Button primary="true" className="btn-card">See More</Button>
           </div>
         </div>
-      </article>
+      </StyledCard>
     );
   };
 
